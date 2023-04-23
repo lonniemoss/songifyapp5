@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  --primary-color: #437C90;
+  --secondary-color: #255957;
+  --tertiary-color: #EEEBD3;
+  --other-color: #A98743;
+  --another-color: #F7C548;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+}
+.pagination {
+  border-radius: 5px;
+  display: flex;
+  list-style: none;
+  max-width: 90%;
+  width: 90%;
+  margin-top: 10px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+  transition: all 0.1s ease-in-out;
+  background-color: var(--primary-color);
+}
+.pagination li {
+  margin: 20px;
+}
+.pagination li a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 20px;
+  padding: 2px 15px 2px 15px;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: all 0.1s ease-in-out;
+}
+.pagination li a:hover {
+  background-color: white;
+  color: var(--secondary-color);
+}
