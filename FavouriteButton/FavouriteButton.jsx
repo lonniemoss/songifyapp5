@@ -36,31 +36,7 @@ class FavouriteButton extends React.Component {
       ],
     };
   };
-  mappedData = async () => {
-    let mappedDataArray = [];
-    GlobalStateContext.PROXY.getState().allMixedData__PROXY.forEach(
-      (element) => {
-        GlobalStateContext.FAVOURITEBUTTONLIST_PROXY.getState().favouriteList__PROXY.forEach(
-          (favouriteList) => {
-            if (element.id === favouriteList) {
-              mappedDataArray.push(element);
-            }
-          }
-        );
-      }
-    );
-    await this.updateMappedStates(mappedDataArray);
-  };
-  removeMatchedFavouriteLists = async (favouriteListID, favouriteList) => {
-    let filteredArray = [];
-    favouriteList.forEach((value) => {
-      if (favouriteListID !== value) {
-        filteredArray.push(value);
-      }
-    });
-    return filteredArray;
-  };
-
+ 
   setNewFavourite = async (favouriteListID) => {
     await GlobalStateContext.FAVOURITEBUTTONLIST_PROXY.getState().setFavouriteList__PROXY(
       favouriteListID
@@ -123,7 +99,6 @@ class FavouriteButton extends React.Component {
   render() {
     return (
       <button
-        type="button"
         id={this.props.id + "__favouriteBtn"}
         onClick={this.favouriteButtonHandler}
         className={`${Styles["favourite-list-button"]} favourite-button`}
