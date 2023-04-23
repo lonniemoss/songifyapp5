@@ -306,19 +306,7 @@ class SearchInfoAndGIFs extends React.Component {
               }
               target="__blank"
             >
-              <Image
-                src={
-                  this.state.isGifsLoaded && this.state.gifData[0]
-                    ? this.state.gifData[0].images.original.url
-                      ? this.state.gifData[0].images.original.url
-                      : "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDVhMzJkZTRlN2YzZTIzYjJiYzI4NDRjYjcwNjgxY2U0NGE3MmE5OCZjdD1n/FWi1f9Wn2hubC/giphy.gif"
-                    : "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDVhMzJkZTRlN2YzZTIzYjJiYzI4NDRjYjcwNjgxY2U0NGE3MmE5OCZjdD1n/FWi1f9Wn2hubC/giphy.gif"
-                }
-                alt="an image"
-                height={350}
-                width={350}
-                priority
-              ></Image>
+              
             </Link>
           </div>
         </div>
