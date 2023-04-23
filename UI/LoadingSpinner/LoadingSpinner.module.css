@@ -1,0 +1,121 @@
+.spinner-container {
+  -webkit-animation: spinner 2s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-animation: spinner 2s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-animation: spinner 2s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-animation: spinner 2s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation: spinner 2s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    transform-origin: center;
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    transform-origin: center;
+    -webkit-transform: rotate(90deg);
+  }
+  50% {
+    transform-origin: center;
+    -webkit-transform: rotate(180deg);
+  }
+  75% {
+    transform-origin: center;
+    -webkit-transform: rotate(240deg);
+  }
+  100% {
+    transform-origin: center;
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinner {
+  0% {
+    transform-origin: center;
+    -moz-transform: rotate(0deg);
+  }
+  25% {
+    transform-origin: center;
+    -moz-transform: rotate(90deg);
+  }
+  50% {
+    transform-origin: center;
+    -moz-transform: rotate(180deg);
+  }
+  75% {
+    transform-origin: center;
+    -moz-transform: rotate(240deg);
+  }
+  100% {
+    transform-origin: center;
+    -moz-transform: rotate(360deg);
+  }
+}
+@-o-keyframes spinner {
+  0% {
+    transform-origin: center;
+    -o-transform: rotate(0deg);
+  }
+  25% {
+    transform-origin: center;
+    -o-transform: rotate(90deg);
+  }
+  50% {
+    transform-origin: center;
+    -o-transform: rotate(180deg);
+  }
+  75% {
+    transform-origin: center;
+    -o-transform: rotate(240deg);
+  }
+  100% {
+    transform-origin: center;
+    -o-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes spinner {
+  0% {
+    transform-origin: center;
+    -ms-transform: rotate(0deg);
+  }
+  25% {
+    transform-origin: center;
+    -ms-transform: rotate(90deg);
+  }
+  50% {
+    transform-origin: center;
+    -ms-transform: rotate(180deg);
+  }
+  75% {
+    transform-origin: center;
+    -ms-transform: rotate(240deg);
+  }
+  100% {
+    transform-origin: center;
+    -ms-transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    transform-origin: center;
+    transform: rotate(0deg);
+  }
+  25% {
+    transform-origin: center;
+    transform: rotate(90deg);
+  }
+  50% {
+    transform-origin: center;
+    transform: rotate(180deg);
+  }
+  75% {
+    transform-origin: center;
+    transform: rotate(240deg);
+  }
+  100% {
+    transform-origin: center;
+    transform: rotate(360deg);
+  }
+}
