@@ -25,7 +25,7 @@ class FavouriteButton extends React.Component {
     );
   }
   updateMappedStates = async (mappedData) => {
-    let uniqueArray = new Set([...mappedData]);
+    
     await GlobalStateContext.FAVOURITEBUTTONLISTITEMS_PROXY.getState().setFavouriteLists__Item__PROXY(
       [...uniqueArray]
     );
@@ -116,9 +116,7 @@ class FavouriteButton extends React.Component {
         await this.setNewFavouriteAnother(favouriteListID);
       }
     }
-    await this.mappedData();
-    this.changeButtonText();
-    event.target.disabled = false;
+    
   };
   render() {
     return (
