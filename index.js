@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const App = express();
-const PORT = 4000;
+const PORT = 3000;
 
 //API modules MusicBrainz
 const FetchTitles = require("./API/MusicBrainzAPI/FetchTitles");
@@ -39,12 +39,7 @@ App.post("/fetchTitleInfo", async (req, res) => {
   }
 });
 
-App.post("/fetchCoverArt", async (req, res) => {
-  const FetchCoverArtResponse = await FetchCoverArt.FetchCoverArtAPI(
-    req.body.input
-  );
-  res.send(FetchCoverArtResponse);
-});
+
 
 //Giphy APIs
 App.post("/fetchGifs", async (req, res) => {
