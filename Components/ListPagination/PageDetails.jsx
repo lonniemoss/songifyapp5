@@ -26,7 +26,7 @@ class PageDetails extends React.Component {
       };
     }
   }
-  componentDidUpdate(prevProps, newStates) {
+  componentDidUpdate() {
     GlobalStateContext.PAGINATION_PROXY.subscribe((state) => {
       this.setState(
         (prevState) => {
