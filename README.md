@@ -81,3 +81,5 @@ yarn dev
 to run the frontend
 
 9. Go to  http://localhost:3000
+
+<img width="1431" alt="Screenshot 2023-04-25 at 5 23 57 PM" src="https://user-images.githubusercontent.com/101422810/234407360-2fdad1ed-98b4-4c0e-a660-cdcf1db1b517.png">
