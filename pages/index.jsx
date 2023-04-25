@@ -1,10 +1,9 @@
 import Headers from "@/Components/Headers/Headers";
 import SearchBox from "@/Components/SearchBox/SearchBox";
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useState } from "react";
 import SearchInfo from "../Components/SearchInfo/SearchInfoAndGIFs";
 import SearchInput from "../Components/UI/SearchInput/SearchInput";
 import FavouriteSection from "../Components/FavouriteSection/FavouriteSection";
-import GlobalStateContext from "../state/state";
 import ListPagination from "@/Components/ListPagination/ListPagination";
 
 function Home() {
