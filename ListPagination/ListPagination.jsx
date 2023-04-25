@@ -69,7 +69,12 @@ class ListPagination extends React.Component {
                 anotherKey={this.state.activePage}
               ></PageDetails>
               <Pagination
-                
+                key={this.state.paginationRenderCount}
+                activePage={this.state.activePage}
+                itemsCountPerPage={10}
+                totalItemsCount={this.state.totalItemsCount}
+                pageRangeDisplayed={5}
+                onChange={this.handlePageChange.bind(this)}
               ></Pagination>
             </>
           )}
