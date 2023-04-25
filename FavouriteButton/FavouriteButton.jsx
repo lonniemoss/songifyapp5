@@ -1,5 +1,5 @@
 import Styles from "./FavouriteButton.module.css";
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { } from "react";
 import GlobalStateContext from "../../state/state";
 class FavouriteButton extends React.Component {
   constructor(props) {
