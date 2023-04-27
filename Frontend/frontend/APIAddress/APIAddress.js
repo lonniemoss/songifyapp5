@@ -1,0 +1,1 @@
+export default {APIAddress: "http://localhost:4000/"} //replace backend API ADDRESS 
