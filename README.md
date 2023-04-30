@@ -59,3 +59,6 @@ yarn dev
 to run the frontend
 
 Go to http://localhost:3000
+
+
+<img width="1431" alt="Screenshot 2023-04-25 at 5 23 57 PM" src="https://user-images.githubusercontent.com/101422810/235357541-92be39c4-cde0-4f67-8b36-89c4f6ed88e0.png">
